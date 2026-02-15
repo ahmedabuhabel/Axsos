@@ -1,1 +1,0 @@
-function countdown(params) {}
