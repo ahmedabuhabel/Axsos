@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <h1>Ahmed Abuhabel</h1>
@@ -16,32 +23,38 @@
     <br />
     <br />
     <div>
-      <img src="./assets/github.png" alt="github" width="30px" />
-      <a href="https://github.com/ahmedabuhabel">My Github</a>
-      <img src="./assets/linkedin.png" alt="linkedin" width="30px" />
-      <a href="https://www.linkedin.com/in/ahmed-abuhabel">My Github</a>
-      <img src="./assets/gmail.png" alt="github" width="30px" />
-      <a href="mailto:ahmadabdhaleem@gmail.com">My Email</a>
+      <i class="fab fa-github">
+        <a
+          href="https://github.com/ahmedabuhabel"
+          style="text-transform: none; font-family: sans-serif"
+          >github</a
+        >
+      </i>
+      <i class="fa-brands fa-linkedin">
+        <a
+          href="https://www.linkedin.com/in/ahmed-abuhabel"
+          style="text-transform: none; font-family: sans-serif"
+          >LinkedIn</a
+        ></i
+      ><i class="fa-regular fa-envelope">
+        <a
+          href="mailto:ahmadabdhaleem@gmail.com"
+          style="text-transform: none; font-family: sans-serif"
+          >Email</a
+        ></i
+      >
     </div>
     <h3>Techonolgies</h3>
     <table>
-      <tr>
-        <thead>
-          Front-End
-        </thead>
-        <thead>
-          Python
-        </thead>
-        <thead>
-          JavaScript
-        </thead>
-        <thead>
-          Database
-        </thead>
-        <thead>
-          Conepts
-        </thead>
-      </tr>
+      <thead>
+        <tr>
+          <th>Front-End</th>
+          <th>Python</th>
+          <th>JavaScript</th>
+          <th>Database</th>
+          <th>Concepts</th>
+        </tr>
+      </thead>
       <tr>
         <td>HTML5</td>
         <td>Django</td>
@@ -71,21 +84,24 @@
       height="50px"
       width="50px"
     />
-    <div>
+
+    <p>
       Social Media App made in Python - <a href="">code</a> |
       <a href="">deployed</a>
-    </div>
+    </p>
+
     <h3>Contact Me</h3>
     <form action="" method="get">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" />
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" />
+
       <div>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" />
-        <label for="email">Email:</label>
-        <input type="text" id="email" name="email" />
+        <label for="message">Message:</label>
+        <br />
+        <textarea name="message" cols="40" rows="6" id="message"> </textarea>
       </div>
-      Message:
-      <br />
-      <textarea name="message" cols="40" rows="6"> </textarea>
       <br />
       <br />
       <input type="submit" value="Send Message" />
