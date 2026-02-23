@@ -1,0 +1,29 @@
+.search {
+    display: block;
+    color: #239FA1;
+    background-color: #F5F5F5;
+    border: 2px solid #229EA0;
+    outline-color: #229EA0;
+    text-align: center;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.add {
+    display: block;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    background-color: #03D1B2;
+    margin: 10px;
+
+}
+
+.submit {
+    color: white;
+    background-color: #2A78E4;
+    border: 2px solid black;
+    box-shadow: 2px 2px black;
+    margin: 10px;
+
+}

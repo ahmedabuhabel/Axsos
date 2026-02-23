@@ -1,7 +1,7 @@
 h1 {
     background-color: black;
     color: white;
-   padding: 10px;
+    padding: 10px;
 }
 h1 span{
     color: cyan;
@@ -17,8 +17,7 @@ h2{
 h3{
     background-color: lightblue;
     text-align: right;
-   padding: 10px;
-   text-decoration: underline;
-   font-weight: 400;
-    
+    padding: 10px;
+    text-decoration: underline;
+    font-weight: 400;
 }
