@@ -1,0 +1,40 @@
+body {
+    background-color: #EAEAFF;
+    border-top: black 5px solid;
+}
+
+img.octocat {
+    margin: 20px;
+    height: 200px;
+}
+
+h1 {
+    text-align: center;
+    color: #484855;
+}
+
+h5 {
+    text-align: center;
+    color: #484855;
+}
+
+.first {
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #52BCF8;
+}
+
+.second {
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #C9A1B6;
+}
+
+.third {
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+}
