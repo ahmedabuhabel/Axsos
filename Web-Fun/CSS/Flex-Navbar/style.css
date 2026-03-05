@@ -1,0 +1,36 @@
+.nav {
+    background-color: #333333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.active {
+    color: #fff;
+}
+
+a {
+    color: #A2A2A2;
+    text-decoration: none;
+}
+
+.btn {
+    color: #F5FAFB;
+    background-color: #18A2B8;
+    box-shadow: 3px 3px black;
+    border: 3px solid black;
+
+}
+
+h1 {
+    color: #fff;
+
+}

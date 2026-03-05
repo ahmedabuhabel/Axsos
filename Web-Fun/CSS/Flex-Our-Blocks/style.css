@@ -1,5 +1,9 @@
+* {
+    box-sizing: border-box;
+}
+
 .container {
-    width: 950px;
+    min-width: fit-content;
     background-color: silver;
     padding: 20px;
 
@@ -15,7 +19,7 @@
     height: 300px;
     width: 200px;
     background-color: blue;
-    display: flex;
+
 
 }
 
