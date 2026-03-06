@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+
+    width: 30%;
+    height: 200px;
+    margin: 30px;
+    border: 2px solid #CCCCCC;
+    position: relative;
+
+
+}
+
+.content {
+    width: 100%;
+
+    position: absolute;
+    top: 4%;
+    padding: 20px;
+
+
+}
+
+.header {
+    background-color: #18A2B8;
+    border: none;
+    width: 100%;
+    height: 30%;
+
+
+}
+
+.settings,
+.marker {
+    width: 10px;
+    height: 13px;
+}
+
+.settings {
+    color: #095395;
+}
+
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #CCCCCC;
+
+}
+
+a {
+    color: #095395;
+}
