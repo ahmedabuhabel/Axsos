@@ -6,17 +6,14 @@
 
 .card {
     width: 30%;
-    height: 200px;
-    margin: 30px;
+    min-height: 200px;
     border: 2px solid #CCCCCC;
-    position: relative;
+
 }
 
 .content {
-    width: 100%;
-    position: absolute;
-    top: 15%;
-    left: 4%;
+    padding: 20px;
+    margin-top: -50px;
 
 }
 
@@ -24,18 +21,16 @@
     background-color: #18A2B8;
     border: none;
     width: 100%;
-    height: 30%;
+    padding: 30px;
 }
 
-.settings,
+
 .marker {
     width: 10px;
     height: 13px;
 }
 
-.settings {
-    color: #095395;
-}
+
 
 
 .avatar {
@@ -46,6 +41,7 @@
 
 }
 
+i,
 a {
     color: #095395;
 }
