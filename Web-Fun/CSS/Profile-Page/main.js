@@ -44,5 +44,6 @@ function fizzBuzz() {
     }
   }
 }
-var items = [];
+var items = [1, 2, 3,4];
 items.concat;
+console.log(items);
