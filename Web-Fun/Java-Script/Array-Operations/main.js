@@ -20,4 +20,71 @@ function searchingArray() {
     console.log("Not found");
   }
 }
-searchingArray();
+function sortingArray() {
+  let scores = [50, 20, 70, 10, 40];
+  console.log(scores.sort((a, b) => a - b));
+  console.log(scores.sort((a, b) => b - a));
+  let names = ["Shatha", "Sara", "Lina", "Sami", "Dalia"];
+  console.log(names.sort());
+}
+function insertingElements() {
+  let animals = ["dog", "cat", "rabbit"];
+  animals.push("elephant");
+  animals.unshift("lion");
+  animals.splice(2, 0, "tiger");
+  console.log(animals);
+}
+function removingElements() {
+  let fruits = ["apple", "banana", "cherry", "date"];
+
+  fruits.shift();
+  fruits.pop();
+  fruits.splice(fruits.indexOf("banana"), 1);
+  console.log(fruits);
+}
+function combineArrays() {
+  let array1 = [1, 2, 3];
+  let array2 = [4, 5, 6];
+  let combinedArray = [];
+  combinedArray = combinedArray.concat(...array1, array2);
+  console.log(combinedArray);
+}
+function splittingArrays() {
+  let items = ["a", "b", "c", "d", "e"];
+  let array1 = items.slice(0, 3);
+  let array2 = items.slice(2, items.length);
+  console.log(array1);
+  console.log(array2);
+}
+function filteringElements() {
+  let numbers = [1, 5, 10, 15, 20, 25, 30];
+  let filterdArray = [];
+  for (let index = 0; index < numbers.length; index++) {
+    if (numbers[index] > 15) {
+      filterdArray.push(numbers[index]);
+    }
+  }
+  console.log(filterdArray);
+}
+function removeDuplicates() {
+  let input = [1, 2, 2, 3, 3, 4, 4, 5];
+  let distinctArray = [];
+  for (let i = 0; i < input.length; i++) {
+    if (distinctArray.includes(input[i])) {
+      continue;
+    } else {
+      distinctArray.push(input[i]);
+    }
+  }
+  console.log(distinctArray);
+}
+function rotateArray(arr, k) {
+  arr = [1, 2, 3, 4, 5];
+  k = 2;
+  let rotatedArray = [];
+  let slicedArray = arr.slice(arr.length - k, arr.length);
+  let remainingArray = arr.slice(0, arr.length - k);
+  rotatedArray = rotatedArray.concat(slicedArray, remainingArray);
+  console.log(rotatedArray);
+}
+rotateArray();
