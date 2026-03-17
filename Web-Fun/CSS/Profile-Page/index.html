@@ -5,9 +5,157 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile Page</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="./main.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
-    <h1>Ahmed</h1>
+    <nav>
+      <ul class="nav-links">
+        <h1 class="nav-title">Profile</h1>
+        <li><a href="#">Home</a></li>
+        <li><a href="#" class="active">My Profile</a></li>
+        <li><a href="#">Find Connections</a></li>
+      </ul>
+      <li><button class="signOutbtn">Sign Out</button></li>
+    </nav>
+    <div class="mainContent">
+      <div class="lefContent">
+        <div class="userCard">
+          <div class="header"></div>
+          <div class="content">
+            <img
+              src="./assets/icons/user-circle.png"
+              alt="user-avatar"
+              class="avatar"
+            />
+            <h3>Jane Doe</h3>
+            <div class="location">
+              <img
+                src="./assets/icons/map-marker.png"
+                alt="marker"
+                class="marker"
+              />
+              <span>Seattle</span>
+            </div>
+            <p>Developer | Engineer | Problem Solver</p>
+            <p>Master of shadows and the Internet!</p>
+
+            <i class="fa fa-gear"> <a href="#">edit profile</a></i>
+          </div>
+        </div>
+        <div class="blackCard">
+          <div class="title"><h3>Education</h3></div>
+          <div class="content">
+            <h4>Coding Dojo - Full Stack Bootcamp</h4>
+            <p class="date">Dec 2019 - Mar 2020</p>
+            <p>
+              Triple black belt in Python, MERN, and C#. Master of shadows and
+              the Internet!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="rightContent">
+        <div class="blackCard">
+          <div class="title">
+            <h3 class="counter">2</h3>
+            <h3>Connections Request</h3>
+          </div>
+          <div class="content">
+            <div class="connetctionRequestItem">
+              <div class="userInfo">
+                <img
+                  src="./assets/images/todd-s.jpg"
+                  alt="user-avatar"
+                  class="avatar"
+                />
+                <h4>Todd E</h4>
+              </div>
+              <div class="actionButtons">
+                <img
+                  src="./assets/icons/accept-circle.png"
+                  alt="accept-request"
+                />
+                <img
+                  src="./assets/icons/close-circle.png"
+                  alt="accept-request"
+                />
+              </div>
+            </div>
+            <div class="connetctionRequestItem">
+              <div class="userInfo">
+                <img
+                  src="./assets/images/phil-s.jpg"
+                  alt="user-avatar"
+                  class="avatar"
+                />
+                <h4>Phil K</h4>
+              </div>
+              <div class="actionButtons">
+                <img
+                  src="./assets/icons/accept-circle.png"
+                  alt="accept-request"
+                />
+                <img
+                  src="./assets/icons/close-circle.png"
+                  alt="accept-request"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="blackCard">
+          <div class="title">
+            <h3 class="counter">500+</h3>
+            <h3>Your Connections</h3>
+          </div>
+          <div class="content">
+            <div class="connetctionRequestItem">
+              <div class="userInfo">
+                <img
+                  src="./assets/images/adrien-s.jpg"
+                  alt="user-avatar"
+                  class="avatar"
+                />
+                <h4>Adrien D</h4>
+              </div>
+            </div>
+            <div class="connetctionRequestItem">
+              <div class="userInfo">
+                <img
+                  src="./assets/images/Anne-s.jpg"
+                  alt="user-avatar"
+                  class="avatar"
+                />
+                <h4>Anne J</h4>
+              </div>
+            </div>
+            <div class="connetctionRequestItem">
+              <div class="userInfo">
+                <img
+                  src="./assets/images/alayne-s.jpg"
+                  alt="user-avatar"
+                  class="avatar"
+                />
+                <h4>Alayne T</h4>
+              </div>
+            </div>
+            <div class="connetctionRequestItem">
+              <div class="userInfo">
+                <img
+                  src="./assets/images/arry-s.jpg"
+                  alt="user-avatar"
+                  class="avatar"
+                />
+                <h4>Arry Y</h4>
+              </div>
+            </div>
+            <a href="#" class="viewMore">View More</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
