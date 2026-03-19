@@ -32,8 +32,10 @@ function insertingElements() {
   animals.push("elephant");
   animals.unshift("lion");
   animals.splice(2, 0, "tiger");
+
   console.log(animals);
 }
+
 function removingElements() {
   let fruits = ["apple", "banana", "cherry", "date"];
 
