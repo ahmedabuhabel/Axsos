@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Button Clicker</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Dojonary</h1>
+      <input type="search" name="" id="" class="search" placeholder="Search" />
+      <button type="submit" onclick="changeInnerText(this)" class="submit">
+        Login
+      </button>
+    </div>
+    <div class="main">
+      <div class="left">
+        <div class="container">
+          <div class="leftContent">
+            <h2>Ninja</h2>
+            <p>noun</p>
+            <p>Plural: ninjas</p>
+            <button
+              type="submit"
+              onclick="alert('Ninja was Liked')"
+              class="submit"
+            >
+              13 likes
+            </button>
+          </div>
+          <div class="rightContent">
+            <p>
+              A practoitioner skilled in the
+              <span><a href="#">Japanese</a></span> art of
+              <span><a href="#">ninjutsu</a></span>
+            </p>
+          </div>
+        </div>
+        <div class="container">
+          <div class="leftContent">
+            <h2>Ninja</h2>
+            <p>noun</p>
+            <p>Plural: ninjas</p>
+            <button
+              type="submit"
+              class="submit"
+              onclick="alert('Ninja was Liked')"
+            >
+              37 likes
+            </button>
+          </div>
+          <div class="rightContent">
+            <p>
+              A <span><a href="#">programmer</a></span> who breaks down problems
+              with <span><a href="#">zen</a></span
+              >-like focus
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="container">
+          <p>Dojonary is defined by <strong>YOU</strong></p>
+          <button type="submit" onclick="removeButton(this)" class="submit">
+            Add Definition
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
