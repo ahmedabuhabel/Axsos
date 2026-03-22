@@ -63,7 +63,3 @@ function removeShorterStrings(arr, minLength) {
   }
   console.log(newArray);
 }
-removeShorterStrings(
-  ["Good morning", "sunshine", "the", "Earth", "says", "hello"],
-  4,
-);
