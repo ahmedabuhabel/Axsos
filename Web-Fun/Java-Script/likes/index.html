@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Likes</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header><h2>Network</h2></header>
+
+    <main>
+      <h2>Your Feed</h2>
+      <div class="content">
+        <aside>
+          <img
+            src="./assets/user-circle.png"
+            alt="user-avatar"
+            class="avatar"
+          />
+          <p><a href="#">Add an avatar</a></p>
+          <h3>John Doe</h3>
+        </aside>
+        <div class="cards">
+          <div class="card">
+            <div class="header">
+              <strong>Neil M</strong>
+              <span> <span class="likes">9</span> Like(s)</span>
+              <button class="btn" onclick="increment(this)">Like</button>
+            </div>
+            <br />
+            <p>
+              I just set up this new discord bot, let me know what you all
+              think.<a href="#">link</a>
+            </p>
+          </div>
+          <div class="card">
+            <div class="header">
+              <strong>Nichole K</strong>
+              <span> <span class="likes">12</span> Like(s)</span>
+              <button class="btn" onclick="increment(this)">Like</button>
+            </div>
+            <br />
+            <p>Just finished my <a href="#">next comic</a>, check it out</p>
+          </div>
+          <div class="card">
+            <div class="header">
+              <strong>Jum R</strong>
+              <span> <span class="likes">9</span> Like(s)</span>
+              <button class="btn" onclick="increment(this)">Like</button>
+            </div>
+            <br />
+            <p>
+              I can't stop listening to the <a href="#">new album.</a> Who else
+              is liking it?
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

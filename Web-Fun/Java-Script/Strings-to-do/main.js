@@ -56,10 +56,18 @@ function countNonSpaces(str) {
 }
 function removeShorterStrings(arr, minLength) {
   var newArray = [];
+  var len = 0;
   for (let i = 0; i < arr.length; i++) {
     if (arr[i].length >= minLength) {
-      newArray.push(arr[i]);
+      newArray[len] = arr[i];
+      len++;
     }
   }
   console.log(newArray);
 }
+removeShorterStrings(["hello", "world", "this", "is", "a", "sentence"], 3);
+/* 
+ out[out.len] ==> 0 = arr[i]  out=[]; out[0] =arr[i]==> out [1]
+ out[out.len]==>  1
+ out[0] =arr[i] hello 
+*/
