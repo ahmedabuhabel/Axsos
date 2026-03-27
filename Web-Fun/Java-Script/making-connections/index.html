@@ -20,7 +20,11 @@
           <li><a href="#">Home</a></li>
           <li><a href="#" class="active">My Profile</a></li>
           <li><a href="#">Find Connections</a></li>
-          <li><button class="btn">Sign Out</button></li>
+          <li>
+            <button class="btn" onclick="changeBackgroundColor(this)">
+              Sign Out
+            </button>
+          </li>
         </ul>
       </div>
     </div>
@@ -85,7 +89,7 @@
                   src="icons/accept-circle.png"
                   alt="accept"
                   class="icon"
-                  onclick="icreaseNumberOfConnections(this)"
+                  onclick="icreaseNumberOfConnections()"
                 />
                 <img src="icons/close-circle.png" alt="close" class="icon" />
               </span>
