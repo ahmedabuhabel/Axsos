@@ -8,57 +8,62 @@
   </head>
   <body>
     <header>
-      <h1>DojoWeather</h1>
-      <nav>
-        <a href="#">Burbank</a><a href="#">Chicago</a><a href="#">Dallas</a>
-      </nav>
+      <div class="container">
+        <h1>DojoWeather</h1>
+        <nav>
+          <a onclick="showAlert(this)" href="#">Burbank</a
+          ><a onclick="alert('Loading wheather report...')" href="#">Chicago</a
+          ><a onclick="alert('Loading wheather report...')" href="#">Dallas</a>
+        </nav>
+      </div>
     </header>
-    <main>
-      <section>
+    <main class="container">
+      <section class="city-temp">
         <h3>San Jose</h3>
-        <section class="temp">
+        <section>
           <span>show temperature in </span>
-          <select name="temp" id="temp">
-            <option value="c">°C</option>
-            <option value="f">°F</option>
+          <select name="temp" id="temp" class="temp">
+            <option value="c"><span>°</span>C</option>
+            <option value="f"><span>°</span>F</option>
           </select>
         </section>
       </section>
+      <hr />
       <div class="cards">
         <div class="card">
-          <h4>Today</h4>
+          <h2>Today</h2>
           <img src="./assets/some_rain.png" alt="some-rain" />
           <span>some rain</span>
           <section class="degrees">
-            <span class="max-degreee">24°</span
-            ><span class="min-degreee">18°</span>
+            <span class="max-degreee">24<span>°</span></span
+            ><span class="min-degreee">18<span>°</span></span>
           </section>
         </div>
         <div class="card">
-          <h4>Tomorrow</h4>
+          <h2>Tomorrow</h2>
           <img src="./assets/some_sun.png" alt="some-sun" />
           <span>some rain</span>
           <section class="degrees">
-            <span class="max-degreee">27°</span
-            ><span class="min-degreee">19°</span>
+            <span class="max-degreee">27<span>°</span></span
+            ><span class="min-degreee">19<span>°</span></span>
           </section>
         </div>
         <div class="card">
-          <h4>Friday</h4>
+          <h2>Friday</h2>
           <img src="./assets/some_clouds.png" alt="some-clouds" />
           <span>some rain</span>
           <section class="degrees">
-            <span class="max-degreee">21°</span
-            ><span class="min-degreee">16°</span>
+            <span class="max-degreee">21<span>°</span></span
+            ><span class="min-degreee">16<span>°</span></span>
           </section>
         </div>
         <div class="card">
-          <h4>Saturday</h4>
+          <h2>Saturday</h2>
           <img src="./assets/some_sun.png" alt="some-sun" />
           <span>some sun</span>
           <section class="degrees">
-            <span class="max-degreee">26°</span
-            ><span class="min-degreee">21°</span>
+            <span class="max-degreee">26<span>°</span></span
+            ><span class="min-degreee">21<span>°</span></span>
           </section>
         </div>
       </div>
@@ -72,7 +77,9 @@
             traffic. <a href="#">Read more...</a>
           </p>
         </section>
+        <button type="submit" onclick="removeCookie(this)">I accept</button>
       </footer>
     </main>
+    <script src="./script.js"></script>
   </body>
 </html>

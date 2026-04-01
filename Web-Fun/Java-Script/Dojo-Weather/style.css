@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    background-color: #9FC5F8;
+
+    padding: 10px 0;
+}
+
+img {
+    height: 150px;
+    width: 145px;
+    border-radius: 50%;
+    object-fit: cover;
+    transform: scale(.6);
+}
+
+header h1 {
+    color: white;
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px auto;
+
+
+}
+
+.city-temp {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px auto;
+    width: 100%;
+}
+
+.temp {
+    border: 1px solid black;
+
+}
+
+hr {
+    height: 5px;
+    width: 100%;
+    background-color: black;
+
+
+
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    padding: 10px 0;
+    background-color: #EEEEEE;
+
+}
+
+.degrees {
+
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 70%;
+
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EEEEEE;
+
+    border: 2px solid black;
+
+}
+
+footer img {
+    height: 100px;
+    width: 100px;
+}
+
+button {
+    color: white;
+    background-color: #2A78E4;
+    border: 2px solid black;
+    box-shadow: 2px 2px black;
+    margin: 10px;
+    padding: 10px;
+    white-space: nowrap;
+
+}
+
+.max-degreee {
+    color: red;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.min-degreee {
+    color: blue;
+    font-weight: bold;
+    font-size: 24px;
+}
