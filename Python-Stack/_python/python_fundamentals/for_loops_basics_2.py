@@ -74,4 +74,12 @@ def ultimate_analysis(list):
     return dict
 
 
-print(ultimate_analysis([37, 2, 1, -9]))
+# 9
+def reverse_list(list):
+    left = 0
+    right = len(list) - 1
+    while left < right:
+        list[left], list[right] = list[right], list[left]
+        left += 1
+        right -= 1
+    return list
