@@ -9,8 +9,12 @@ sports_directory = {
 }
 z = [{"x": 10, "y": 20}]
 x[1][0] = 15
+x[0][1] = 1
+print(x)
 students[0]["last_name"] = "Brayant"
 sports_directory["soccer"][0] = "Andres"
+
+
 z[0]["y"] = 30
 
 
