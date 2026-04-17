@@ -13,6 +13,7 @@ class Animal:
 
         return self
 
+    # increase the health and happiness when feeding the animal
     def feed(self):
         self.health += 10
         self.happiness += 10
@@ -45,9 +46,11 @@ class Zoo:
         self.animals = []
         self.name = zoo_name
 
+    # Here I use Polymorphism instead of adding Lion - Tiger in seperated functions
     def add_Animal(self, animal):
         self.animals.append(animal)
 
+    # Here when I call it will feed all animals based on animal type
     def feed_all(self):
         for animal in self.animals:
             animal.feed()
