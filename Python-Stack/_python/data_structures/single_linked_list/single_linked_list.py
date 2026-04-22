@@ -67,6 +67,8 @@ class SList:
 
 
 my_list = SList()
-my_list.add_to_front("are").add_to_front("Linked lists").add_to_back("fun!").remove_val(
+my_list.add_to_front("are").add_to_front("you").add_to_front(
+    "Linked lists"
+).add_to_back("fun!").remove_val(
     "are"
-).print_values()
+).remove_from_back().remove_from_front().print_values()

@@ -1,65 +1,37 @@
 # Singly Linked List Implementation in Python
 
-This project provides a clean and simple implementation of a **Singly Linked List** data structure. It demonstrates node creation, list traversal, and method chaining.
-
-## Table of Contents
-
-- [Overview](#overview)
-- [Classes](#classes)
-- [Methods](#methods)
-- [Usage Example](#usage-example)
-- [Time Complexity](#time-complexity)
+A robust implementation of a Singly Linked List data structure in Python, featuring node manipulation, traversal, and advanced deletion logic.
 
 ---
 
-## Overview
+## Features
 
-A Singly Linked List is a linear collection of data elements called nodes. Each node contains a value and a pointer to the next node in the sequence. Unlike arrays, linked lists do not require contiguous memory, making them efficient for certain types of insertions and deletions.
+### Data Structures
 
----
+- **`SLNode`**: A class representing a container for a value and a pointer to the next node.
+- **`SList`**: A controller class to manage the sequence of nodes and provide high-level operations.
 
-## Classes
+### Supported Operations
 
-### 1. `SLNode`
+This implementation uses **Method Chaining**, allowing for concise and readable code.
 
-The building block of the list.
-
-- **Attributes**:
-  - `value`: The data stored in the node.
-  - `next`: A reference to the next node (initially `None`).
-
-### 2. `SList`
-
-The wrapper class that manages the linked nodes.
-
-- **Attributes**:
-  - `head`: The starting point of the list (initially `None`).
+| Category      | Method                | Description                                                 |
+| :------------ | :-------------------- | :---------------------------------------------------------- |
+| **Insertion** | `add_to_front(val)`   | Inserts a new node at the start of the list.                |
+|               | `add_to_back(val)`    | Appends a new node to the end of the list.                  |
+| **Deletion**  | `remove_from_front()` | Removes the first node (head) of the list.                  |
+|               | `remove_from_back()`  | Removes the last node (tail) of the list.                   |
+|               | `remove_val(val)`     | Finds and removes the first occurrence of a specific value. |
+| **Utility**   | `print_values()`      | Iterates through the list and prints all node values.       |
 
 ---
 
-## Methods
+## Detailed Logic
 
-This implementation uses **Method Chaining** (returning `self`), allowing you to call multiple methods in a single statement.
+### Method Chaining
 
-| Method              | Description                                                                  |
-| :------------------ | :--------------------------------------------------------------------------- |
-| `add_to_front(val)` | Adds a new node with the given value to the beginning of the list.           |
-| `add_to_back(val)`  | Traverses the list and adds a new node with the given value to the very end. |
-| `print_values()`    | Iterates through every node and prints its value to the console.             |
-
----
-
-## Usage Example
+Each method returns `self`, which refers back to the `SList` instance. This allows you to stack operations:
 
 ```python
-# Create a new list instance
-my_list = SList()
-
-# Chain methods to build the list and print results
-my_list.add_to_front("are").add_to_front("Linked lists").add_to_back("fun!").print_values()
-
-# --- Console Output ---
-# Linked lists
-# are
-# fun!
+my_list.add_to_front("A").add_to_back("B").remove_from_front()
 ```
