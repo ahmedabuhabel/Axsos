@@ -19,6 +19,9 @@ class Animal:
         self.happiness += 10
         return self
 
+    def feed(self, amount):
+        pass
+
 
 class Lion(Animal):
 

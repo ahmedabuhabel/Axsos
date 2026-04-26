@@ -62,3 +62,9 @@ class User:
             other_user.accounts[to_account].deposit(amount)
         else:
             print("Account not found")
+
+
+user1 = User("Ahmed", "ahmad@gmail.com")
+user1.add_account("acc1")
+user1.make_deposit("acc1", 50)
+user1.display_user_balance("acc1")
