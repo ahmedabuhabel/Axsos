@@ -1,4 +1,3 @@
-```markdown
 # Flask Playground App
 
 A simple Flask application that demonstrates passing parameters from the URL to an HTML template and rendering dynamic UI using Jinja2.
@@ -15,12 +14,13 @@ A simple Flask application that demonstrates passing parameters from the URL to 
 ---
 
 ## 📁 Project Structure
+
 ```
 
 .
-├── playground.py
+├── playgorund.py
 ├── templates
-│ └── index.html
+│   └── index.html
 └── README.md
 
 ````
@@ -64,8 +64,8 @@ http://127.0.0.1:5000/
 
 ### Parameters
 
-- `num` → number of boxes
-- `color` → CSS color value
+* `num` → number of boxes
+* `color` → CSS color value
 
 ---
 
@@ -77,8 +77,8 @@ http://127.0.0.1:5000/play/5/red
 
 ### Result
 
-- Displays **5 boxes**
-- Each box has **red background color**
+* Displays **5 boxes**
+* Each box has **red background color**
 
 ---
 
@@ -93,9 +93,9 @@ def hello_world(num=3, color="blue"):
     return render_template("index.html", count=num, color=color)
 ```
 
-- Receives `num` and `color` from URL
-- Converts `num` to integer
-- Passes values to template
+* Receives `num` and `color` from URL
+* Converts `num` to integer
+* Passes values to template
 
 ---
 
@@ -107,21 +107,21 @@ def hello_world(num=3, color="blue"):
 {% endfor %}
 ```
 
-- Generates boxes dynamically based on `count`
+* Generates boxes dynamically based on `count`
 
 ```html
 background-color: {{ color }};
 ```
 
-- Applies dynamic color from URL
+* Applies dynamic color from URL
 
 ---
 
 ## ⚠️ Notes
 
-- `num` must be a valid number (otherwise the app will crash unless handled)
-- `color` must be a valid CSS color (e.g., `red`, `blue`, `#ff0000`)
-- Ensure `index.html` is inside a `templates` folder (required by Flask)
+* `num` must be a valid number (otherwise the app will crash unless handled)
+* `color` must be a valid CSS color (e.g., `red`, `blue`, `#ff0000`)
+* Ensure `index.html` is inside a `templates` folder (required by Flask)
 
 ---
 
@@ -131,10 +131,4 @@ background-color: {{ color }};
 http://127.0.0.1:5000/play/3/blue
 http://127.0.0.1:5000/play/10/green
 http://127.0.0.1:5000/play/6/#ff5733
-```
-
----
-
-```
-
 ```
