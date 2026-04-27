@@ -18,7 +18,7 @@ A simple Flask application that demonstrates passing parameters from the URL to 
 ```
 
 .
-├── app.py
+├── playground.py
 ├── templates
 │ └── index.html
 └── README.md
