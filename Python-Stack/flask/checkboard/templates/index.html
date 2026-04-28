@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Here is how to access the style file -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <title>Checkboard</title>
+  </head>
+  <body>
+    <h1>Checkboard</h1>
+    <div class="board"></div>
+  </body>
+  <script>
+    const rows = {{ rows }};
+    const columns = {{ columns }};
+    const color1 = "{{ color1 }}";
+    const color2 = "{{ color2 }}";
+  </script>
+  <script
+    type="text/javascript"
+    src="{{ url_for('static', filename='script.js') }}"
+  ></script>
+</html>
