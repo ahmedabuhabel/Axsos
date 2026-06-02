@@ -1,14 +1,8 @@
-from django.shortcuts import render, redirect, HttpResponse
-from django.http import JsonResponse
-
-
-# Create your views here.
-def root_method(request):
-    return redirect("/blogs/")
+from django.shortcuts import render, HttpResponse, redirect
 
 
 def index(request):
-    return HttpResponse("placeholder to later display a list of all blogs")
+    return HttpResponse("placeholder to display a list of all blogs")
 
 
 def new(request):
@@ -16,11 +10,11 @@ def new(request):
 
 
 def create(request):
-    return redirect("/blogs/")
+    return redirect("/blogs")
 
 
 def show(request, number):
-    return HttpResponse(f"placeholder to display blog {number}")
+    return HttpResponse(f"placeholder to display blog number: {number}")
 
 
 def edit(request, number):
@@ -28,13 +22,4 @@ def edit(request, number):
 
 
 def destroy(request, number):
-    return redirect("/blogs/")
-
-
-def response(request):
-    return JsonResponse(
-        {
-            "title": "My First Blog Post",
-            "content": "This is the content of the blog post placeholder.",
-        }
-    )
+    return redirect("/blogs")
