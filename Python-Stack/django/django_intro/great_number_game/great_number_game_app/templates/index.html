@@ -1,0 +1,35 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Great Number Game</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+  </head>
+  <body>
+    <main>
+      <h2>Welcome to the Great Number Game</h2>
+      <h4>I am thinking a number between 1 and 100</h4>
+      <p>Take a guess!</p>
+
+      {% if res %}
+      <div
+        class="box"
+        style="background-color: {{ color }}; padding: 15px; margin: 10px 0; color: white;"
+      >
+        <p>{{ res }}</p>
+
+        {% if "was the number" in res %}
+        <a href="/reset"><button>Play Again</button></a>
+        {% endif %}
+      </div>
+      {% endif %} {% if not res or "was the number" not in res %}
+      <form action="/guess" method="post">
+        {% csrf_token %} <input type="number" name="guess" required />
+        <button type="submit">Submit</button>
+      </form>
+      {% endif %}
+    </main>
+  </body>
+</html>
