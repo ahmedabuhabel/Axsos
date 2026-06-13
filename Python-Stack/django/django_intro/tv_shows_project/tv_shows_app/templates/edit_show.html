@@ -24,7 +24,7 @@
             class="form-control"
             id="title"
             name="title"
-            value="{{show.title}}"
+            value="{{old_title}}"
           />
         </div>
         <div class="mb-3">
@@ -34,7 +34,7 @@
             class="form-control"
             id="network"
             name="network"
-            value="{{show.network}}"
+            value="{{old_network}}"
           />
         </div>
         <div class="mb-3">
@@ -44,7 +44,7 @@
             class="form-control"
             id="release_date"
             name="release_date"
-            value="{{show.release_date|date:'Y-m-d'}}"
+            value="{{old_date}}"
           />
         </div>
         <div class="mb-3">
@@ -55,14 +55,20 @@
             name="description"
             rows="3"
           >
-        {{show.description}}
-        </textarea
+{{old_desc}}</textarea
           >
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
       <br />
       <a href="/shows/{{ show.id }}" class="btn btn-success">Go to Show</a>
+      {% if messages %}
+      <ul>
+        {% for message in messages %}
+        <li>{{ message }}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
     </div>
   </body>
 </html>
