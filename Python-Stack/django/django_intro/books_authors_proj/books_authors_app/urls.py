@@ -19,4 +19,5 @@ urlpatterns = [
         views.add_book_to_author,
         name="add_book_to_author",
     ),
+    path("authors/<int:author_id>/delete", views.delete_authors, name="delete_authors"),
 ]
