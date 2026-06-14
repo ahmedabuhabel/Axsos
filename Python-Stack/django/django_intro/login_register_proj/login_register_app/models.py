@@ -28,7 +28,6 @@ class UserManager(models.Manager):
             errors['birthday'] = "Birthday field is required"
         else:
             try:
-                # تحويل النص القادم من حقل input type="date" إلى كائن تاريخ حقيقي
                 birthday_date = datetime.strptime(birthday_str, '%Y-%m-%d').date()
                 today = date.today()
                 
@@ -36,8 +35,7 @@ class UserManager(models.Manager):
                 if birthday_date >= today:
                     errors['birthday'] = "Birthday must be in the past"
                 else:
-                    # ب) حساب العمر بدقة متناهية (Sensei Bonus)
-                    # هذا السطر يحسب فرق السنوات، ويطرح 1 إذا لم يمر يوم ميلاده في السنة الحالية بعد
+                  
                     age = today.year - birthday_date.year - ((today.month, today.day) < (birthday_date.month, birthday_date.day))
                     
                     if age < 13:

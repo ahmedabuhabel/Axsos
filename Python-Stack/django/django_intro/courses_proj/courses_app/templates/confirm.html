@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Delete a course</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-light p-5">
+    <div
+      class="container bg-white p-5 rounded shadow shadow-sm text-center"
+      style="max-width: 600px"
+    >
+      <h2 class="text-danger fw-bold mb-4">
+        Are you sure you want to delete the following course?
+      </h2>
+
+      <div class="card bg-light p-4 text-start mb-4">
+        <p><strong>Name:</strong> {{ course.name }}</p>
+        <p class="mb-0">
+          <strong>Description:</strong> {{ course.description.content }}
+        </p>
+      </div>
+
+      <div class="d-flex justify-content-center gap-3">
+        <a href="/" class="btn btn-secondary px-4">No</a>
+        <form action="/courses/destroy/{{ course.id }}/confirm" method="POST">
+          {% csrf_token %}
+          <button type="submit" class="btn btn-danger px-4">
+            Yes! I want to delete this
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
