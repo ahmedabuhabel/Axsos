@@ -38,7 +38,7 @@ def register(request):
                 password=hash_pw
             )
             request.session['user_id'] = new_user.id
-            return redirect("/wall/")
+            return redirect("/books")
     return redirect("/")
 
 def login(request):
@@ -56,7 +56,7 @@ def login(request):
             logged_user = user_list[0]
             if bcrypt.checkpw(request.POST['password'].encode(), logged_user.password.encode()):
                 request.session['user_id'] = logged_user.id
-                return redirect("/wall/")
+                return redirect("/books")
         
         request.session['hold_login_email'] = request.POST.get('email', '')
         messages.error(request, "Invalid Email or Password.")
